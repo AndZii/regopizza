@@ -1,0 +1,66 @@
+
+        
+
+
+        
+          
+          <div class="row">         
+            <div class="col-xs-12 col-md-4">
+               <img src="/img/logo.jpg" alt="rego-pizza center" class="img-responsive center">
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                     <br>
+                      <div class="slogan">
+                          <h3>
+                              All Our Pizzas Are Made With Quality Ingredients Wth No MSG Added
+                          </h3>
+                      </div>
+                      <div class="ads">
+                          <h3>CATER YOUR NEXT EVENT WITH US</h3>
+                          <h5>ASK ABOUT OUR CATERING SEVRICES</h5>
+                      </div>
+                      
+                       <div class="delivery">
+                          <h3>FREE FAST DELIVERY</h3>
+                       </div>
+                       
+                       <div class="address">
+                          <h3>91-16 63RD DRIVE, REGO PARK, NY, 13374</h3>
+                          <h1>718.406.9111</h1>
+                       </div>
+                       
+                  </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="map-view">
+                <iframe align="center" frameborder="0" height="350" src="https://www.google.com/maps/embed/v1/place?q=91-16%2063RD%Drive%2C%20Rego%20Park%2C%20NY%2C%20United%20States%2011374&amp;key=AIzaSyAG1JHhDDpKIublp2o1A107YHnRFEGQa7E" style="border:0" width="100%"></iframe>
+                </div>
+            </div>
+            
+        </div>
+           
+<!--           -->
+<!--           -->
+<!--           -->
+           
+           <div class="row">                                
+            <div class="col-sm-12 col-md-4 white-col">
+              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["BREAKFAST MENU"] } %>
+             <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["HOT BEVARAGES"] } %>
+            </div>
+            <div class="col-sm-12 col-md-4 brown-col">
+                 <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["LUNCH/DINNER MENU"] } %>
+            </div>
+            <div class="col-sm-12 col-md-4 white-col">
+              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["PIZZA MENU"] } %>
+              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["COLD BEVARAGES"] } %>
+            </div> 
+        </div>
+    
+      <div class="row">
+    <%= render "/layouts/footer" %>
+</div> 
+  
