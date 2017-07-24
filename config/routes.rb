@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'admin/index'
+
+  get 'admin/show_menu' => 'admin#show_menu', as: :admin_show_menu
+
+  patch 'admin/edit' => 'admin#edit', as: :save_menu_item_changes
+    
+  post 'admin/create' => 'admin#create', as: :create_menu_item
+
+  get 'admin/show_item' => 'admin#show_item', as: :admin_show_item
+
+  get 'admin/new_item' => 'admin#new', as: :create_new_item    
+    
   get 'main/index' => 'main#index', as: :index
 
   get 'main/about'

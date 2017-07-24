@@ -528,7 +528,7 @@ MenuItem.create(
 MenuItem.create(
     section: section,
     second_section: second_section,
-    name:"Izraeli Drink", 
+    name:"Israeli Drink", 
     price: "$2.00",
     description: "",   
     extras: ""
