@@ -1,14 +1,38 @@
 
         
+        <div class="row hidden-xs">
+            <div class="col-sm-12 landing-wrapper">
+                <div class="landing-part">
+                    <div class="row">
+                       <div class="col-sm-8 col-sm-offset-2">
+                        <div class="col-sm-6 col-sm-offset-3 image-wrapper">
+                            <img src="/img/logo.jpg" alt="rego-pizza center" class="img-responsive center">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                  <div class="col-sm-4 col-sm-offset-4 ">
+                    <br>
+                     <div class="kosher-title">
+                          <h4>UNDER STRICT KOSHER <br> SUPERVISION OF</h4>
+                          <img src="/img/kosher-logo.png" alt="" class="ing-responsive">
 
+                      </div>       
+                  </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         
           
-          <div class="row">         
-            <div class="col-xs-12 col-md-4">
+          <div class="row visible-xs">         
+            <div class="col-xs-12 col-sm-12 col-md-4">
                <img src="/img/logo.jpg" alt="rego-pizza center" class="img-responsive center">
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-12 col-md-4">
                 <div class="row">
                   <div class="col-xs-12">
                      <br>
@@ -34,7 +58,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-12 col-md-4">
                <div class="map-view">
                 <iframe align="center" frameborder="0" height="350" src="https://www.google.com/maps/embed/v1/place?q=91-16%2063RD%Drive%2C%20Rego%20Park%2C%20NY%2C%20United%20States%2011374&amp;key=AIzaSyAG1JHhDDpKIublp2o1A107YHnRFEGQa7E" style="border:0" width="100%"></iframe>
                 </div>
@@ -47,16 +71,16 @@
 <!--           -->
            
            <div class="row">                                
-            <div class="col-sm-12 col-md-4 white-col">
-              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["BREAKFAST MENU"] } %>
-             <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["HOT BEVARAGES"] } %>
+            <div class="col-xs-12 col-md-4 white-col">
+              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["BREAKFAST MENU"] , :anchor_link => "breakfast-menu"} %>
+             <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["HOT BEVARAGES"] ,:anchor_link => "hot-bavarages-menu"} %>
             </div>
-            <div class="col-sm-12 col-md-4 brown-col">
-                 <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["LUNCH/DINNER MENU"] } %>
+            <div class="col-xs-12 col-md-4 brown-col">
+                 <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["LUNCH/DINNER MENU"], :anchor_link => "lunch-dinner-menu" } %>
             </div>
-            <div class="col-sm-12 col-md-4 white-col">
-              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["PIZZA MENU"] } %>
-              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["COLD BEVARAGES"] } %>
+            <div class="col-xs-12 col-md-4 white-col">
+              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["PIZZA MENU"], :anchor_link => "pizza-menu" } %>
+              <%= render :partial => '/layouts/menu_chunk', :locals => {:menu_item => @res["COLD BEVARAGES"], :anchor_link => "cold-bavarages-menu" } %>
             </div> 
             </div>
     
