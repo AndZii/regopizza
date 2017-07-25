@@ -1,7 +1,8 @@
 class MainController < ApplicationController
    http_basic_authenticate_with name: "regopizza", password: "password", except: :placeholder
-  
+   
   def placeholder 
+      render :layout => false
   end      
       
   def index       
