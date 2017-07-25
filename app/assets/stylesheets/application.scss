@@ -14,6 +14,21 @@
  *= require_self
  */
 
+.options > col-md-4 {
+    height: 15vh;
+}
+
+.options > div > p {
+        text-align: center;
+        font-size: 24px;
+        color: #912a2d;
+    }
+
+.kosher-border {
+    border: solid 1px #912a2d;
+    border-radius: 10px;
+}
+
 .call-btn-wrapper {
     position: fixed;
     background: #fdb523;
@@ -275,7 +290,7 @@
 
 .white-col {
      .menu-body {
-        margin: 10px 0; 
+        margin: 10px auto; 
         padding: 0 10px;
         border-style: dotted;
         border-color: #912a2d;
@@ -292,7 +307,7 @@
 
 .brown-col {
     .menu-body {
-        margin: 10px 0; 
+        margin: 10px auto; 
         padding: 0 10px;
         border-style: dotted;
         border-color: white;
